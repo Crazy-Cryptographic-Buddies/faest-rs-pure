@@ -9,7 +9,7 @@
 //!
 //! Key generation, signing and verification can be implemented as follows:
 //! ```
-//! use faest::{FAEST128fSigningKey, FAEST128fSignature}
+//! use faest::{FAEST128fSigningKey, FAEST128fSignature};
 //! use faest::{signature::{Signer, Verifier, Keypair}, KeypairGenerator};
 //!
 //! let sk = FAEST128fSigningKey::generate(rand::thread_rng());
@@ -22,7 +22,7 @@
 //!
 //! Due to the size of the signatures, all variants support signing into boxed signatures:
 //! ```
-//! use faest::{FAEST128fSigningKey, FAEST128fSignature}
+//! use faest::{FAEST128fSigningKey, FAEST128fSignature};
 //! use faest::{signature::{Signer, Verifier, Keypair}, KeypairGenerator};
 //!
 //! let sk = FAEST128fSigningKey::generate(rand::thread_rng());
@@ -81,7 +81,7 @@ mod rijndael_32;
 mod universal_hashing;
 mod utils;
 mod vc;
-mod vole;
+pub mod vole;
 
 use crate::{
     faest::{faest_keygen, faest_sign, faest_verify},
