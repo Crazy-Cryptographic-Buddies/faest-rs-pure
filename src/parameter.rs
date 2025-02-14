@@ -664,7 +664,7 @@ impl OWFParameters for OWF256EM {
     }
 }
 
-pub(crate) trait TauParameters {
+pub trait TauParameters {
     type Tau: ArrayLength;
     type K0: ArrayLength;
     type K1: ArrayLength;
