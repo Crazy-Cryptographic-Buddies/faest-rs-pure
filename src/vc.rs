@@ -16,7 +16,7 @@ use crate::{
 
 type Decom<L, L2> = (Vec<GenericArray<u8, L>>, Vec<GenericArray<u8, L2>>);
 
-pub(crate) trait VectorCommitment {
+pub trait VectorCommitment {
     type LambdaBytes: ArrayLength;
     type LambdaBytesTimes2: ArrayLength;
     type Lambda: ArrayLength;
