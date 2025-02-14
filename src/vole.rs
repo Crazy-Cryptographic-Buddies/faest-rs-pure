@@ -54,7 +54,7 @@ where
 }
 
 /// Reference to storage area in signature for all `c`s.
-pub(crate) struct VoleCommitmentCRef<'a, LH>(&'a mut [u8], PhantomData<LH>);
+pub struct VoleCommitmentCRef<'a, LH>(&'a mut [u8], PhantomData<LH>);
 
 impl<LH> Index<usize> for VoleCommitmentCRef<'_, LH>
 where
