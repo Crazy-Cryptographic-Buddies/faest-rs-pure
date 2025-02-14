@@ -74,13 +74,13 @@ mod em;
 mod faest;
 mod fields;
 mod internal_keys;
-mod parameter;
+pub mod parameter;
 mod prg;
 mod random_oracles;
 mod rijndael_32;
 mod universal_hashing;
 mod utils;
-mod vc;
+pub mod vc;
 pub mod vole;
 
 use crate::{
