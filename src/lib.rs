@@ -75,7 +75,7 @@ mod faest;
 mod fields;
 mod internal_keys;
 pub mod parameter;
-mod prg;
+pub mod prg;
 mod random_oracles;
 mod rijndael_32;
 mod universal_hashing;

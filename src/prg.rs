@@ -15,9 +15,9 @@ type Aes192Ctr128BE = ctr::Ctr128BE<aes::Aes192>;
 type Aes256Ctr128BE = ctr::Ctr128BE<aes::Aes256>;
 
 /// Size of the IV
-pub(crate) type IVSize = U16;
+pub type IVSize = U16;
 /// IV of the PRG
-pub(crate) type IV = GenericArray<u8, IVSize>;
+pub type IV = GenericArray<u8, IVSize>;
 
 /// Interface for the PRG
 pub(crate) trait PseudoRandomGenerator: Sized + Reader {
